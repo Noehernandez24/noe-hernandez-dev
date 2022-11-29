@@ -166,6 +166,8 @@ span{
     padding: 25px;
     margin-bottom: 100px;
     border-radius: 7px;
+    position: relative;
+    overflow: hidden;
 }
 
 .main__simg{
@@ -173,6 +175,27 @@ span{
     background-color: var(--gray);
     border-radius: 4px;
     padding: 3px 15px;
+    animation: skills-move 1s forwards;
+}
+
+.main__simg--2{
+    animation: skills-move 1.5s forwards;
+}
+
+.main__simg--3{
+    animation: skills-move 2s forwards;
+}
+
+/* Keyframes skills */
+
+@keyframes skills-move {
+    0%{
+        transform: translateY(-140px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
 }
 
 .about{
@@ -298,15 +321,51 @@ span{
 
 .skills__progress--1{
     width: 95%;
+    animation: progress-bar-1 2s forwards;
 }
 
 .skills__progress--2{
     width: 90%;
+    animation: progress-bar-2 3s forwards;
 }
 
 .skills__progress--3{
     width: 25%;
+    animation: progress-bar-3 4s forwards;
 }
+
+/* bar progress animations */
+
+@keyframes progress-bar-1 {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes progress-bar-2 {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes progress-bar-3 {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 25%;
+    }
+}
+/* ======================= */
 
 .proyects{
     display: flex;
@@ -714,6 +773,7 @@ span{
 
     .proyects__cta:hover{
         background-color: #10d5eb;
+        box-shadow: 8px 8px 13px 0px #34b0be78;
     }
 
     /* Modificadores */
