@@ -242,6 +242,8 @@ span{
     padding: 2px;
 }
 
+
+
 .services{
     text-align: center;
     display: flex;
@@ -592,6 +594,11 @@ span{
         font-size: 3rem;
     }
 
+    .main__span{
+        color: white;
+        font-weight: 400;
+    }
+
     .main__paragraph{
         font-size: 1.2rem;
     }
@@ -629,6 +636,12 @@ span{
     .main__simg{
         height: 5rem;
         padding: 3px 25px;
+        transition: .2s;
+        box-shadow: 6px 6px 13px 0px #03051c4e;
+    }
+
+    .main__simg:hover{
+        box-shadow: 6px 6px 13px 0px #d1ceca48;
     }
 
     .about{
@@ -639,6 +652,8 @@ span{
         width: 700px;
         margin: 0 auto;
     }
+
+
 
     .section__title{
         font-size: 2rem;
@@ -662,6 +677,7 @@ span{
 
     .section__cv:hover{
         border: 4px solid var(--white);
+        box-shadow: 4px 4px 13px 0px #34b0be78;
     }
 
     .services__container{

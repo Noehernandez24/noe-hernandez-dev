@@ -8,3 +8,4 @@ menuIcon.addEventListener('click', (e) => {
     push.classList.toggle("push")
     
 })
+
