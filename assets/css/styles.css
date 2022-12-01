@@ -14,6 +14,8 @@
     scroll-behavior: smooth;
 }
 
+/* GENERAL STYLES */
+
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +31,8 @@ span{
     color: var(--cyan);
     font-weight: 600;
 }
+
+/* HERO STYLES */
 
 #particles-js{
     background-color: #03051c;
@@ -65,7 +69,7 @@ span{
     font-weight: 600;
 }
 
-/* Estilos a agregar en JS */
+/* NAV-MENU JS */
 
 .active{
     transform: translateY(-260px);
@@ -198,6 +202,8 @@ span{
     }
 }
 
+/* ABOUT STYLES */
+
 .about{
     text-align: center;
 }
@@ -242,7 +248,7 @@ span{
     padding: 2px;
 }
 
-
+/* SERVICES STYLES */
 
 .services{
     text-align: center;
@@ -285,6 +291,8 @@ span{
     padding: 2px 8px;
     border-radius: 40px;
 }
+
+/* SKILLS STYLES (BARS) */
 
 .skills{
     margin-bottom: 80px;
@@ -368,6 +376,7 @@ span{
     }
 }
 /* ======================= */
+/* PROYECTS STYLES */
 
 .proyects{
     display: flex;
@@ -421,6 +430,8 @@ span{
     display: none;
 }
 
+/* CONTACT STYLES */
+
 .contact{
     display: flex;
     flex-direction: column;
@@ -463,6 +474,8 @@ span{
     border-radius: 50%;
 }
 
+/* FOOTER STYLES */
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -494,8 +507,10 @@ span{
     margin-bottom: 100px;
 }
 
-
+/* DESKTOP */
 @media screen and (min-width:1240px) {
+
+    /* HERO STYLES */
 
     .container{
         width: 93%;
@@ -656,7 +671,7 @@ span{
         margin: 0 auto;
     }
 
-
+    /* SERVICES STYLES */
 
     .section__title{
         font-size: 2rem;
@@ -714,6 +729,8 @@ span{
         width: 50%;
         margin-bottom: 80px;
     }
+
+    /* PROYECTS STYLES */
 
     .proyects{
         display: grid;
@@ -807,6 +824,8 @@ span{
         font-size: .9rem;
     }
 
+    /* CONTACT STYLES */
+
     .contact{
         width: 60%;
         height: 150px;
@@ -832,6 +851,8 @@ span{
         top:calc(65% - 12px);
         left: calc(42% - 12px);
     }
+
+    /* FOOTER STYLES */
 
     .footer{
         gap: 50px;
