@@ -591,6 +591,7 @@ span{
         z-index: 50;
         top: 40px;
         left: 100px;
+        width: 500px;
     }
 
     .main__title{
