@@ -330,17 +330,31 @@ span{
 }
 
 .skills__progress--1{
-    width: 95%;
-    animation: progress-bar-1 2s forwards;
+    width: 0%;
+   
 }
 
 .skills__progress--2{
-    width: 90%;
-    animation: progress-bar-2 3s forwards;
+    width: 0%;
+   
 }
 
 .skills__progress--3{
-    width: 25%;
+    width: 0%;
+    
+}
+
+/* Animaciones en JS */
+
+.skills-animation-1{
+    animation: progress-bar-1 2s forwards;
+}
+
+.skills-animation-2{
+    animation: progress-bar-2 3s forwards;
+}
+
+.skills-animation-3{
     animation: progress-bar-3 4s forwards;
 }
 
