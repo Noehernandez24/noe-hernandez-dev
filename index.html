@@ -11,6 +11,8 @@
     <title>Noé Hernández Developer</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./assets/images/logo-portafolio.png" type="image/x-icon">
+    <!-- SCROLL ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -52,7 +54,7 @@
                 <img src="./assets/images/profile-3.png" alt="Noe-Hernandez-foto" class="main__img">
             </div>
             
-            <div class="main__info">
+            <div class="main__info" data-aos="fade-right">
                 <h2 class="main__title">Soy</h2>
                 <h1 class="main__name">Noé Cabrera</h1>
                 <p class="main__paragraph">Fronted Developer</p>
@@ -76,7 +78,7 @@
     </header>
     
     <!-- ABOUT SECTION -->
-    <section class="about container">
+    <section class="about container" data-aos="fade-up">
 
         <div class="about__texts">
             <h2 class="section__title">Acerca de mí</h2>
@@ -137,7 +139,7 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section class="skills container">
+    <section class="skills container" data-aos="fade-right">
         <h2 class="section__title section__title--skills">Mis habilidades</h2>
 
         <!-- FIRTS -->
@@ -177,7 +179,7 @@
 
     <section class="proyects container">
 
-        <div class="proyects__bg proyects__bg--1">
+        <div class="proyects__bg proyects__bg--1" data-aos="flip-right" data-aos-duration="1000">
             <img src="./assets/images/chat-bot-proyect.png" alt="previsualización-del-chatbot" class="proyects__img">
 
             <div class="proyects__container">
@@ -203,7 +205,7 @@
 
         </div>
 
-        <div class="proyects__bg proyects__bg--2">
+        <div class="proyects__bg proyects__bg--2" data-aos="flip-right" data-aos-duration="2000">
             <img src="./assets/images/sunnyside-proyect.jpg" alt="previsualización-landing-page" class="proyects__img proyects__img--2">
 
             <div class="proyects__container">
@@ -231,7 +233,7 @@
 
         </div>
 
-        <div class="proyects__bg proyects__bg--3">
+        <div class="proyects__bg proyects__bg--3" data-aos="flip-right" data-aos-duration="3000">
             <img src="./assets/images/huddle-proyect.jpg" alt="previsualización-landing-page" class="proyects__img">
 
             <div class="proyects__container">
@@ -288,7 +290,13 @@
     <!-- JAVASCRIPT FUNCTIONS -->
     <script src="./assets/js/particles.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      AOS.init(
+        {
+          duration: 1000
+        }
+      )
         particlesJS(
             {
   "particles": {
